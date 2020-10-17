@@ -5,7 +5,7 @@ import "./Navbar..css"
 const Navbar = () => {
 	return (
 		<nav className="navbar navbar-custom navbar-expand-lg navbar-dark fixed-top navbarCustom">
-			<Link className="navbar-brand" to="#">
+			<Link className="navbar-brand" to="/">
 				<img className="logo" src="/img/superfly-07.png" alt="Superfly Fitness"/> 
 			</Link>
 			<button
@@ -22,12 +22,12 @@ const Navbar = () => {
 			<div className="collapse navbar-collapse" id="navbarNav">
 				<ul className="navbar-nav ml-auto" style={{"marginRight": "19%"}}>
 					<li className="nav-item ml-4">
-						<a className="nav-link" href="#aboutme" >
+						<a className="nav-link" href="/#aboutme" >
 							About me
 						</a>
 					</li>
 					<li className="nav-item ml-4">
-						<a className="nav-link" href="#premium">
+						<a className="nav-link" href="/#premium">
 							Premium
 						</a>
 					</li>

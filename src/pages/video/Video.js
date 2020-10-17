@@ -10,13 +10,26 @@ const Video = (props) => {
 	const [ video, setVideo ] = useState([]);
 	const [ url, setUrl ] = useState();
 
+	function detectEndOfPage(){
+		console.log('scrol works')
+		if (
+			window.innerHeight + window.scrollY >= document.body.offsetHeight
+			/* && !this.loadingMore && !this.loadingVideos */
+		) {
+			//this.loadRight();
+			console.log('end of page, time to load more videos')
+		}
+	}
+
 	useEffect(
 		() => {
+			document.addEventListener('scroll', detectEndOfPage);
 			getVideo(props.params.id).then((response) => response.json()).then((res) => {
 				console.log(res.videos);
 				setVideo(res.videos);
 				setUrl(`${playerSrc}${res.videos[0].idvideo}?autoplay=1`);
 			});
+			return () => document.removeEventListener('scroll', detectEndOfPage);
 		},
 		[ props.params.id ]
 	);
