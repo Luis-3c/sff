@@ -1,0 +1,110 @@
+.banner{
+    height: 92VH;
+    background-image: linear-gradient(rgb(39, 31, 31),rgba(58, 52, 52, 0.63), rgba(51, 42, 42, 0.63)), url('/img/banner3.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+
+.btnSubscribe{
+    padding: 1%;
+    background-color: rgb(71, 67, 63);
+    color: white;
+    border: solid 1px white;
+    border-radius: 5px;
+    font-size: 25px;
+    transition: background-color 0.5s;
+}
+
+.btnSubscribe:hover{
+    background-color: rgb(31, 28, 28);
+}
+
+.aboutme {
+    height: 100vh;
+    background-color: rgb(41, 38, 38);
+    padding-top: 5%;
+}
+
+.premium {
+    height: 100vh;
+    background-image: linear-gradient(rgba(41, 38, 38, 0.774), rgba(41, 38, 38, 0.774)), url('/img/premium1.jpg');
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: bottom; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.premiumCard{
+    width: 80%;
+    margin: 1% auto 0 auto;
+    background-color: rgba(36, 33, 33, 0.623);
+    border: solid 1px white;
+    border-radius: 5px;
+    padding: 5%;
+}
+.premiumCard button {
+    background-color: rgb(236, 26, 72);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 1% 5% 1% 5%
+}
+
+.contact{
+    height: 100vh;
+    background: linear-gradient(90deg, rgb(209, 35, 35) 0%, rgb(209, 41, 35) 48%, rgb(209, 61, 35) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contact hr {
+    width: 53%;
+    border: 1px solid white;
+}
+
+.mediaIcons{
+    display: flex;
+    flex-direction: column;
+}
+.mediaIcons i{
+    margin-top: 53%;
+}
+/*MEDIA QUERIES*/
+@media (min-width:850px){
+    .premiumCard {
+        width: 60%;
+        padding: 2%;
+    }
+    .contact hr {
+        width: 26%;
+    }
+}
+@media (min-width:1200px){
+    .premiumCard {
+        width: 50%;
+        padding: 2%;
+    }
+    .contact hr {
+        width: 20%;
+    }
+}
+@media (min-width:1500px){
+    .premiumCard {
+        width: 30%;
+        padding: 2%;
+    }
+    .contact hr {
+        width: 13%;
+    }
+}

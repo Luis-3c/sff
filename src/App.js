@@ -1,24 +1,20 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import {Route, Switch} from 'wouter'
+import Navbar from './components/navbar/Navbar';
+import Home from './pages/Home/Home';
+import VideosHome from './pages/videosHome/VideosHome'
+import Video from './pages/video/Video'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+     <Navbar/>
+     <Switch>
+        <Route path="/" component={Home} />
+        <Route path="/videos" component={VideosHome} />
+        <Route path="/video/:id" component={Video} />
+     </Switch>
     </div>
   );
 }

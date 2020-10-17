@@ -1,0 +1,24 @@
+.mainCont {
+    display: flex;
+    flex-direction: column;
+}
+
+.playerCont{
+    width: 100%;
+}
+
+.recoCont{
+    width: 100%;
+}
+
+@media (min-width: 900px){
+    .mainCont {
+        flex-direction: row;
+    }
+    .playerCont{
+        width: 82%
+    }
+    .recoCont {
+        width: 18%;
+    }
+}

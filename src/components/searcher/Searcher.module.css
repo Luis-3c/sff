@@ -1,0 +1,26 @@
+.searcherInput{
+    background-color: #141313;
+    border:1px solid #ddd6d6;
+    padding: 1%;
+    width:85%;
+    color: white;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+.searchButton{
+    background-color: rgb(58, 53, 53);
+    padding: 1%;
+    border: 1px solid #ddd6d6;
+    color: white;
+    width: 10%;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+@media (min-width: 1200px) {
+    .buscador{
+        width: 50%;
+        margin: 0 auto 0 auto;
+    }
+}

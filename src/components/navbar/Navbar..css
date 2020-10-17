@@ -1,0 +1,32 @@
+.logo {
+    width: 95px;
+    height: 50px;
+    margin-left: 5%;
+}
+
+
+.navbarCustom{
+    /* background-color: #d12323; */
+    background-color: #ca1c1c;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 17px;
+    position: sticky;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.nav-link{
+    color: white !important;
+}
+
+.nav-link:hover{
+    color: rgb(201, 188, 188) !important;
+}
+
+.navbar-inverse{
+    /* background: rgb(37, 35, 35); */
+    background: linear-gradient(90deg, rgba(38, 35, 35, 0.548) 0%, rgba(38,35,35,0.548) 100%);
+    color: white;
+} 
+
+

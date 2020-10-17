@@ -1,0 +1,65 @@
+.cardContainer{
+    margin-top: 1%;
+    padding: 10px;
+}
+
+.cardContainer:hover .playIcon{
+    visibility: visible;
+    opacity: 1;
+}
+
+.cardContainer:hover .cardImage{
+    filter: brightness(65%);
+    border-left: solid 5px #ca1c1c;
+    border-bottom: solid 5px #ca1c1c;
+}
+
+.cardHeader{
+    position: relative;
+}
+
+.cardImage{
+    width: 100%;
+    transition: filter 0.5s, border-left 0.5s, border-bottom 0.5s;
+}
+
+.cardBody{
+    text-align: left;
+    margin-top: 2%;
+}
+
+.playIcon{
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: visibility 0.2s, opacity 0.5s linear;
+}
+
+
+@media (min-width: 600px){
+    .cardContainer {
+        width: 50%;
+    }
+}
+@media (min-width: 800px){
+    .cardContainer {
+        width: 33%;
+    }
+}
+@media (min-width: 1200px){
+    .cardContainer {
+        width: 25%;
+    }
+}
+@media (min-width: 1500px){
+    .cardContainer {
+        width: 20%;
+    }
+}
